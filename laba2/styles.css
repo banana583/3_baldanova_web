@@ -1,0 +1,399 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #efefef;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 60px;
+    width: 100%;
+    background: linear-gradient(135deg, #ff6a00, #ff3e00);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: rgb(15, 15, 15);
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.header-text p {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: rgb(11, 11, 11);
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    background-color: #ff6a00;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: "Unbounded", serif;
+}
+
+.cta-button:hover {
+    background-color: #ff3e00;
+    transform: translateY(-5px);
+}
+
+.herbal-infusion {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -120px;
+}
+
+.herbal-infusion-text h2 {
+    font-family: "Unbounded", serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color:  #ff6a00;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.herbal-infusion-text p {
+    font-family: "Unbounded", serif;
+    width: 70%;
+    font-size: 1.7em;
+    color:  #000000;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+   
+}
+
+.herbal-infusion-image img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-top: 60px;
+}
+
+.reasons {
+   
+    max-width: 1000px;
+    margin-top: 100px;
+    text-align: center;
+    color: #333;
+}
+
+.reasons h2 {
+    font-family: "Unbounded", serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.reasons ul {
+    font-family: "Unbounded", serif;
+    list-style-type: none; 
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.reasons li {
+    font-family: "Unbounded", serif;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.reasons li strong {
+    font-family: "Unbounded", serif;
+    font-weight: bold;
+    color: #ff6a00;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+}
+
+.review {
+    background-color: white;
+    padding: 30px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+}
+
+.review p {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.review span {
+    font-weight: bold;
+    color: #ff6a00;
+    font-size: 1.2em;
+}
+
+.review-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shampoo-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-ad {
+    width: 100%;
+    max-width: 800px; 
+    padding: 30px;  
+    background-color: #ff6a00;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); 
+    margin-top: 50px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    min-height: 200px;  
+}
+
+.sidebar-ad h3 {
+    font-size: 2.2em; 
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: 'Unbounded', serif;
+}
+
+.sidebar-ad p {
+    font-size: 1.4em; 
+    margin-bottom: 35px; 
+}
+
+.sidebar-ad button {
+    background-color: #ff3e00;
+    color: white;
+    padding: 18px 35px; 
+    font-size: 1.5em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-ad button:hover {
+    background-color: #ff6a00;
+    transform: scale(1.05); 
+}
+
+.sidebar-ad:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);  
+    transform: translateY(-5px); 
+}
+
+footer {
+    margin-top: 80px;
+    padding: 30px;
+    text-align: center;
+    color: #555;
+}
+
+footer p.footer-text {
+    font-size: 3em;
+    color: #ff6a00;
+    font-weight: 800;
+    animation: blink 1s infinite alternate;
+    font-family: "Unbounded", serif;
+}
+
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-button {
+        font-size: 1.3em;
+    }
+
+    .review {
+        width: 100%;
+        height: auto;
+    }
+
+    .review-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+    }
+
+    .shampoo-image {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .sidebar-ad {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .herbal-infusion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .herbal-infusion-text {
+        width: 100%;
+    }
+
+    .herbal-infusion-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        padding: 20px; 
+    }
+
+    .header-text h1 {
+        font-size: 1.8em; 
+        letter-spacing: 1px; 
+    }
+
+    .header-text p {
+        font-size: 1.2em; 
+    }
+
+    .cta-button {
+        font-size: 1.2em;
+        padding: 15px 30px; 
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    .review-image {
+        width: 70px;
+        height: 70px; 
+    }
+
+    .shampoo-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar-ad {
+        width: 100%;
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+
+    .sidebar-ad h3 {
+        font-size: 1.8em; 
+    }
+
+    .sidebar-ad p {
+        font-size: 1.2em; 
+    }
+
+    .sidebar-ad button {
+        font-size: 1.2em; 
+        padding: 12px 25px;
+    }
+
+    .herbal-infusion {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .herbal-infusion-text {
+        width: 100%;
+    }
+
+    .herbal-infusion-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .reasons h2 {
+        font-size: 2em; 
+    }
+
+    .reasons ul {
+        font-size: 1.2em;
+    }
+
+    footer p.footer-text {
+        font-size: 1.7em; 
+    }
+}
