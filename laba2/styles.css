@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #efefef;
@@ -97,7 +98,6 @@ header {
     width: 200px;
     height: 300px;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     margin-top: 60px;
 }
 
@@ -200,12 +200,6 @@ header {
     flex-direction: column;
 }
 
-.shampoo-image {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
 
 .sidebar-ad {
     width: 100%;
