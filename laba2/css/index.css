@@ -5,7 +5,6 @@
 }
 
 main {
-    height: calc(100vh - <высота всех остальных блоков в пикселях>px);
     overflow-y: scroll;
     font-family: 'Roboto', sans-serif;
     background-color: #efefef;
