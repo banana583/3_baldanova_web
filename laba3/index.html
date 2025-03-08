@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Lab 1</title>
+    <style>
+        #gif-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #gif-container img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .press-start-2p-regular {
+            font-family: "Press Start 2P", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .top-bar {
+            width: 100%; 
+            height: 100px; 
+            background-color: #FFA0C0; 
+            color: white;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            font-size: 45px;
+            font-family: "Press Start 2P", serif;
+            -webkit-text-stroke: 2px #d63384;
+        }
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+        }
+        body {
+            background-color: #ffe6f2;
+            color: #d63384;
+            cursor: url('https://64.media.tumblr.com/tumblr_luazhzAOab1qmvaoo.gif'), auto;
+        }
+        .logo {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        .spaced {
+        margin-bottom: 10px;
+        }   
+
+        #fun-facts {
+          background-color: #ffccdd; /* Нежно-розовый фон */
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+        }
+        #fun-facts h2 {
+            font-size: 30px;
+            font-family: "Press Start 2P", serif;
+            -webkit-text-stroke: 1px #ad0b5c;
+            color: #d63384;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #fun-facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #fun-facts li {
+            font-size: 20px;
+            font-family: "Unbounded", serif;
+            -webkit-text-stroke: 0.5px #d63384;
+            color: #d63384;
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+        }
+        #alice {
+            background-color: #474546;
+            padding: 20px;
+        
+            box-shadow: 0 0 10px rgba(42, 39, 40, 0.5);
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+        }
+        #alice .text {
+            width: 70%;
+            font-size: 20px;
+            font-family: "Unbounded", serif;
+            -webkit-text-stroke: 0.5px #390909;
+            color: #eaeaea;
+            text-align: justify;
+            padding-right: 20px;
+        }
+        #alice h2 {
+            font-size: 30px;
+            font-family: "Press Start 2P", serif;
+            -webkit-text-stroke: 1px #520303;
+            color: #e62545;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #alice img {
+            width: 25%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(37, 34, 35, 0.5);
+        }
+        #note {
+            margin-top: 30px;
+            padding: 10px;
+        }
+        #note .text {
+            text-align: justify;
+            font-family: "Unbounded", serif;
+            -webkit-text-stroke: 0.5px #000000;
+            color: #454444;
+        }
+        #note h2 {
+            font-size: 30px;
+            font-family: "Press Start 2P", serif;
+            -webkit-text-stroke: 1px #000000;
+            color: #161616;
+            white-space: nowrap;
+          }
+        #note p {
+            font-size: 20px;
+            font-family: "Unbounded", serif;
+            -webkit-text-stroke: 0.5px #252424;
+            color: #454545;
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(37, 37, 37, 0.3);
+        }
+        #note img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(37, 34, 35, 0.5);
+           
+        }
+        #chelsea {
+            margin-top: 30px;
+            padding: 10px;
+        }
+        #chelsea h2 {
+            text-align: center;
+            font-size: 20px;
+            font-family: "Press Start 2P", serif;
+            -webkit-text-stroke: 1px #ad0b5c;
+            color: #d63384;
+        }
+        #startGameButton {
+            background-color: #f6aed2; 
+            color: #d63384;                          
+            padding: 15px 32px;         
+            text-align: center;          
+            text-decoration: none;       
+            display: inline-block;       
+            font-size: 16px;            
+            margin: 10px 0;             
+            cursor: pointer;          
+            border-radius: 8px;          
+            transition: background-color 0.3s; 
+            font-family: "Press Start 2P", serif;
+        }
+        #startGameButton:hover {
+            background-color: #323232; 
+            color: #d71717;    
+        }
+        .container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+      Lab №1
+    </div>
+    <header>
+        <img src="https://printort.uz/wp-content/uploads/2021/09/20210824_011432.png" class="logo" style="position: absolute; top: 20px; left: 20px;"onclick="showGif()">
+    </header>
+    <div id="gif-container">
+      <img src="https://i.pinimg.com/originals/da/a9/f5/daa9f57e6c8bedf57eb8efecc16a21ca.gif">
+    </div>
+    <main>
+      <div class="container">
+        <button id="startGameButton">Играть в "выживание в лесу"</button>
+      </div>
+      <script src="js/index.js"></script>
+      <section id="fun-facts">
+            <h2>Топ 5 смешных фактов</h2>
+            <ul>
+              <li class="spaced">Пингвины могут «жениться» на одном партнёре: Пингвины часто создают пары на всю жизнь.
+                Некоторые виды пингвинов обмениваются «подарками» в виде камней и при этом «просят» друг друга о браке, 
+                показывая свою привязанность. Это очень трогательное и долгосрочное поведение в животном мире.
+              </li>
+              <li class="spaced">Многие корейские сказки начинаются не с «когда-то давным давно»,
+                    а с фразы «период когда тигры курили». Видимо, так давно табак
+                    был настолько дешевым, что курили вообще все.
+                  </li>
+              <li class="spaced">Тараканы могут выжить без головы: Это звучит как сюжет из фильма ужасов, 
+                  но тараканы действительно могут жить несколько дней без головы.
+                  Это потому, что у них есть такая система, что они могут дышать через отверстия в теле,
+                  а не через рот. В конце концов, они погибают от голода, так как не могут есть без головы.</li>
+              <li class="spaced">Медузы бессмертны: Некоторые виды медуз обладают удивительной способностью возвращаться
+                     к стадии младенца, когда они стареют или повреждаются. Этот процесс может повторяться бесконечно, 
+                     что делает их фактически бессмертными.
+                    </li>
+              <li class="spaced">Собаки могут распознавать эмоции людей: Исследования показывают, что собаки способны читать
+                    человеческие выражения лиц. Например, они могут отличить счастливое лицо от грустного и подстроить свое 
+                    поведение в зависимости от настроения владельца. Пес может подойти к своему хозяину и лизнуть его в лицо, 
+                    когда тот выглядит грустным, пытаясь утешить.
+                  </li>    
+            </ul>
+      </section>
+
+      <section id="alice">
+          <div class="text">
+              <h2>Алиса в Пограничье</h2>
+              <p> «Алиса в Пограничье» — японский сериал, снятый по манге Харо Асо.  
+                  Главный герой, Рёхэй Арису, и его друзья внезапно оказываются в пустом Токио,  
+                  где вынуждены участвовать в смертельно опасных играх.  
+                  Карты, которые они получают, определяют уровень сложности испытаний,  
+                  а проигрыш означает смерть.  
+              </p>
+              <p> Сериал захватывает динамичным сюжетом, неожиданными поворотами и психологической глубиной персонажей.  
+                Особенно интересна идея выбора: борьба за выживание  
+                раскрывает истинную природу каждого героя.
+              </p>
+          </div>
+          <img src="https://avatars.mds.yandex.net/i?id=e51e55b0d8a849b7b1666ec92bb0dd9f_l-5326574-images-thumbs&ref=rim&n=13&w=868&h=1222" 
+               alt="Алиса в Пограничье">
+      </section>
+
+      <section id="note">
+        <div class="text">
+          <h2>Тёмный рыцарь – цитаты из фильма</h2>
+          <p> ❝ Для них ты просто псих, как я. Сейчас ты им нужен, 
+            а надоешь — они тебя выкинут, как прокажённого. Их принципы, 
+            их кодекс — всего лишь слова, забываемые при первой опасности. 
+            Они такие, какими мир позволяет им быть. ❞
+          </p>  
+          <img src="https://citaty.info/files/quote-pictures/91761-temnyi-rycar-the-dark-knight_0.jpg" width="700px" height="auto">
+          <p> ❝ Жизнь всегда становится хуже перед тем, как наладиться. ❞
+          </p>
+          <img src="https://citaty.info/files/quote-pictures/15272-temnyi-rycar-the-dark-knight_0.jpg" width="700px" height="auto">
+          <p>❝ Хочешь знать, почему я использую нож? Пушки слишком быстры, не успеваешь насладиться, 
+            получить истинное удовольствие, а когда я использую нож, в этот самый последний момент раскрывается 
+            вся человеческая сущность, и в каком-то смысле я знаю твоих друзей лучше, чем ты. И... хочешь знать, 
+            кто из них был трусом? ❞
+          </p>
+          <img src="https://citaty.info/files/quote-pictures/46924-temnyi-rycar-the-dark-knight_0.jpg" width="700px" height="auto">
+        </div>
+      </section>
+
+      <section id="chelsea">
+        <h2>Расписание матчей Челси (Февраль-Март 2025)</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+          <thead>
+            <tr>
+              <th style="border: 1px solid #d63384; padding: 10px; text-align: center; background-color: #ffccdd;">Дата</th>
+              <th style="border: 1px solid #d63384; padding: 10px; text-align: center; background-color: #ffccdd;">Соперник</th>
+              <th style="border: 1px solid #d63384; padding: 10px; text-align: center; background-color: #ffccdd;">Место</th>
+              <th style="border: 1px solid #d63384; padding: 10px; text-align: center; background-color: #ffccdd;">Время (PST)</th>
+       
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">22 февраля 2025</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">Aston Villa</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">Villa Park, Бирмингем</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">09:30 AM PST</td>
+      
+            </tr>
+            <tr>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">25 февраля 2025</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">Southampton FC</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">St. Mary's, Саутгемптон</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">12:15 PM PST</td>
+          
+            </tr>
+            <tr>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">9 марта 2025</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">Leicester City</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">King Power Stadium, Лестер</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">07:00 AM PDT</td>
+              
+            </tr>
+            <tr>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">16 марта 2025</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">Arsenal FC</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">Emirates Stadium, Лондон</td>
+              <td style="border: 1px solid #d63384; padding: 10px; text-align: center;">06:30 AM PDT</td>
+             
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+      <script>
+        function showGif() {
+            var gifContainer = document.getElementById('gif-container');
+            gifContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
