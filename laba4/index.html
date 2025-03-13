@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шампунь ЖУМАЙСЫНБА</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>ЖУМАЙСЫНБА</h1>
+                <p>СИЛА ПРИРОДЫ В КАЖДОЙ КАПЛЕ</p>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="herbal-infusion">
+            <div class="herbal-infusion-text hoverable">
+                <h2>СОСТАВ, КОТОРЫЙ ТВОРИТ ЧУДЕСА!</h2>
+                <p>
+                    Наш товар для волос - это смесь редких и уникальных растений, собранных в самых экологически чистых регионах.
+                    Он восстанавливает волосы, укрепляет корни и стимулирует рост. Забудь про лысину, ведь с ЖУМАЙСЫНБА твои волосы будут шикарными! 
+                </p>
+            </div>
+            <div class="herbal-infusion-image hoverable">
+                <img id="image" src="img/temnizhumaisinba.jpeg" alt="ЖУМАЙСЫНБА">
+                <button id="cta-button" class="cta-button">КУПИТЬ СЕЙЧАС</button>
+            </div>
+        </section>
+    
+        <section class="reasons">
+            <h2>ТОП-5 ПРИЧИН ПОЧЕМУ ТЕБЕ НУЖЕН ЖУМАЙСЫНБА:</h2>
+            <ul>
+                <li><strong>1. ЛЫСЫЕ? СТАНОВИТЕСЬ ЛЕГЕНДОЙ С ВОЛОСАМИ КАК У ЛЬВА!</strong></li>
+                <li><strong>2. ТВОЙ ДРУГ НЕ ПОЛЬЗУЕТСЯ? ОН СТАНОВИТЕСЯ ЛЫСЫМ!</strong></li>
+                <li><strong>3. ВОЛОСЫ ПОСТОЯННО БЛЕСТЯТ. ТЫ ВЖЕ СИЯЕШЬ.</strong></li>
+                <li><strong>4. 100% РЕЗУЛЬТАТ. (Или почти!)</strong></li>
+                <li><strong>5. НИКТО НЕ УЙДЕТ БЕЗ ЖУМАЙСЫНБА, ИНАЧЕ ВОЛОСЫ УЙДУТ!</strong></li>
+            </ul>
+        </section>
+
+        <section class="advertisement">
+            <div class="sidebar-ad">
+                <h3>Купи ЖУМАЙСЫНБА!</h3>
+                <p>Не упусти шанс, волосы больше не будут лысеть!</p>
+            </div>
+        </section>
+        
+        <form id="reviewForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="text">Текст отзыва:</label>
+            <textarea id="text" name="text" required></textarea>
+            <br>
+            <label for="imageInput">Ссылка на изображение:</label>
+            <input type="url" id="imageInput" name="image" required>
+            <br>
+            <button type="submit">Добавить отзыв</button>
+        </form>
+        
+        <section class="reviews">
+            <div class="reviews-container" id="reviewsContainer"></div>
+        </section>
+          
+    </main>
+
+    <footer>
+        <p class="footer-text">НЕ БУДЬ ЛЫСЫМ! КУПИ ЖУМАЙСЫНБА!</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
