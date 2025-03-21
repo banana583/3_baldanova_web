@@ -31,9 +31,31 @@ class FooterBlock extends Block {
   }
 }
 
+class NameBlock extends Block {
+  render() {
+      return `<div class="block"><h1 class="blockh1">${this.content}</h1></div>`;
+  }
+}
+
 class ImageBlock extends Block {
   render() {
       return `<div class="block"><img class="blockimage" src="${this.content}" width="230" height="230"></div>`;
+  }
+}
+
+class StatsBlock extends Block {
+  render() {
+      return `<div class="block">
+        <h1 class="blockh1">Характеристики</h1>
+        <ul class="stats-list">
+          <li><strong>Редкость:</strong> ★★★★★</li>
+          <li><strong>Элемент:</strong> Пиро</li>
+          <li><strong>Оружие:</strong> Двуручный меч</li>
+          <li><strong>Регион:</strong> Мондштадт</li>
+          <li><strong>Роль в команде:</strong> Главный DPS</li>
+          <li><strong>Основной стат на возвышении:</strong> Крит. урон</li>
+        </ul>
+      </div>`;
   }
 }
 
@@ -107,7 +129,9 @@ class ConstellationBlock extends Block {
 
 function renderPage() {
   const mainContent = [
+    new NameBlock("Дилюк Рагвиндр"),
     new ImageBlock("img/ava.jpg"),
+    new StatsBlock(),
     new TextBlock("Игровой пиро персонаж в Genshin Impact. Дилюк, родившийся в богатой семье Рагнвиндр, в настоящее время является владельцем Винодельни Рассвет и уважаемым дворянином в Мондштате."),
     new TalentBlock(),
     new ConstellationBlock()
