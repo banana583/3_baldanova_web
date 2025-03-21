@@ -131,7 +131,7 @@ footer {
     margin-top: 15px; 
     display: flex;
     flex-direction: row;
-    align-items: center;  /* Centers the image and text horizontally */
+    align-items: center; 
     padding: 10px;  
     background: linear-gradient(to bottom, #8e1414, #974f4f);
     border: 5px solid rgb(75, 4, 4);
