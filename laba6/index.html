@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Navigation</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav>
+        <button onclick="fetchDogImage()">Собаки</button>
+        <button onclick="fetchCatImage()">Кошки</button>
+        <button onclick="fetchRandomUser()">Данные пользователей</button>
+        <button onclick="createPost()">Создать пост</button>
+        <button onclick="updatePost()">Обновить пост</button>
+        <button onclick="patchPost()">Обновить часть поста</button>
+        <button onclick="deletePost()">Удалить пост</button>
+    </nav>
+
+    <div class="input-section">
+        <input type="text" id="title" placeholder="Заголовок поста">
+        <textarea id="body" placeholder="Содержание поста"></textarea>
+    </div>
+
+    <div class="output-data" id="data-output"></div>
+    <div class="notification" id="notification"></div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

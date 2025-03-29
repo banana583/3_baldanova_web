@@ -1,0 +1,143 @@
+@import url("reset.css");
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.notification {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: none;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.info {
+    background-color: #2196F3;
+    color: white;
+}
+
+.input-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.output-data {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.post {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.user-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(248, 180, 232);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
